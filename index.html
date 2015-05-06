@@ -12,13 +12,16 @@
 				background-color: #F8F8FF;
 				font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 				line-height: 1.8em;
-				margin: 100px auto;
+				margin: 50px auto;
 				border: 2px solid #000000;
 				width: 800px;
 				font-size: 18px;
 			}
 			header {
 				height: 70px;
+				border-bottom: 1px dashed #000000;
+				padding-bottom: 30px;
+				margin-bottom: -30px;
 			}
 			h1 {
 				width: 800px;
@@ -32,8 +35,9 @@
 			nav li {
 				display: inline;
 				border-right: 2px solid #000000;
-				margin-right: 20px;
-				padding-right: 30px;
+				margin-right: 0px;
+				padding-right: 20px;
+				margin-left: 10px;
 			}
 			nav li:last-child {
 				border: none;
@@ -75,6 +79,17 @@
 			}
 			li {
 				margin: 10px;
+				margin-left: 20px;
+			}
+			section.info article {
+				float: left;
+				width: 420px;
+				font-size: 85%;
+				margin-top: -25px;
+				margin-bottom: 20px;
+			}
+			footer {
+				text-align: center;
 			}
 		</style>
 	</head>
@@ -91,11 +106,25 @@
 		<aside>
 			<section class = "intressen">
 				<h2>Sysselsättning</h2>
-					<ul>
-						<li>Civilingenjör Datateknik KTH</li>
-						<li>Programmering</li>
-						<li>Japanska 日本語</li>
-					</ul>
+				<ul>
+					<li>Civilingenjör Datateknik KTH</li>
+					<li>Programmering</li>
+					<li>Japanska 日本語</li>
+				</ul>
+			</section>
+			<section class = "info">
+				<h2>Allmän Information</h2>
+				<article>
+					<p>Trevligt att du hittat hit! Jag har studerat
+						till civilingenjör sedan tidernas
+						begynnelse, dvs 2013. Jag hoppas kunna bli klar
+						till 2018 och hinna med en utbytestripp till
+						Japan däremellan någonstans. På den här sidan
+						är det tänkt att du skall kunna hitta lite
+						allmän information om det jag skrivit under
+						intressen här ovanför.
+					</p>
+				</article>
 			</section>
 			<section class = "kontakt">
 				<h2>Kontakt</h2>
