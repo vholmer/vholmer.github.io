@@ -4,6 +4,7 @@
 	<head>
 		<title>Viktor Holmér</title>
 		<style type = "text/css">
+			/*START OF GENERAL STYLE*/
 			header, section, aside, nav {
 				display: block;
 			}
@@ -22,6 +23,14 @@
 				border-bottom: 1px dashed #000000;
 				padding-bottom: 30px;
 				margin-bottom: -30px;
+			}
+			nav img {
+				height: 80px;
+				width: 80px;
+				float: right;
+				margin: -20px;
+				margin-right: 40px;
+				margin-top: -60px;
 			}
 			h1 {
 				width: 800px;
@@ -64,10 +73,15 @@
 				float: right;
 				margin: 40px;
 				padding: 3px;
-				margin-top: 117px;
+				margin-top: -240px;
+			}
+			figure img {
+				width: 150px;
+				height: 150px;
 			}
 			figcaption {
 				text-align: center;
+				font-size: 80%;
 			}
 			ul {
 				list-style-type: none;
@@ -81,6 +95,10 @@
 				margin: 10px;
 				margin-left: 20px;
 			}
+			footer {
+				text-align: center;
+			}
+			/*END OF GENERAL STYLE*/
 			section.info article {
 				float: left;
 				width: 420px;
@@ -88,18 +106,19 @@
 				margin-top: -25px;
 				margin-bottom: 20px;
 			}
-			footer {
-				text-align: center;
-			}
 		</style>
 	</head>
 	<body>
 		<header>
 			<h1>Viktor Holmér</h1>
 			<nav>
+				<a href = "http://datasektionen.se/">
+					<img src="images/skold.svg" onerror="this.onerror=null; this.src='/images/skold.png'">
+				</a>
 				<ul>
 					<li><a href = "index.html">Hem</a></li>
 					<li><a href = "meriter.html">Akademiska Meriter</a></li>
+					<li><a href = "">Japanska</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -131,13 +150,13 @@
 					<p>vholmer@kth.se</p>
 			</section>
 		</aside>
-		<figure>
-			<img src = "kth.jpg" width = "200" height = "200"/>
-			<figcaption>
-				<a href = "http://www.kth.se/">Vetenskap och Konst</a>
-			</figcaption>
-		</figure>
 		<footer>
+			<figure>
+				<img src = "images/kth.jpg"/>
+				<figcaption>
+					<a href = "http://www.kth.se/">Vetenskap och Konst</a>
+				</figcaption>
+			</figure>
 			<p>Senast uppdaterad den 6 Maj 2015</p>
 		</footer>
 	</body>
