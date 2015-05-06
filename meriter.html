@@ -5,16 +5,15 @@
 		<title>Viktor Holmér</title>
 		<style type = "text/css">
 			/*START OF GENERAL STYLE*/
-			header, section, aside, nav {
+			header, section, nav {
 				display: block;
 			}
 			body {
 				color: #000000;
-				background-color: #F8F8FF;
+				background-color: #FFFFFF;
 				font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 				line-height: 1.8em;
 				margin: 50px auto;
-				border: 2px solid #000000;
 				width: 800px;
 				font-size: 18px;
 			}
@@ -25,12 +24,12 @@
 				margin-bottom: -30px;
 			}
 			nav img {
-				height: 80px;
-				width: 80px;
+				height: 100px;
+				width: 100px;
 				float: right;
 				margin: -20px;
 				margin-right: 110px;
-				margin-top: -60px;
+				margin-top: -70px;
 			}
 			h1 {
 				width: 800px;
@@ -56,10 +55,10 @@
 				margin: 30px;
 				border: none;
 			}
-			aside, footer {
+			section.main, footer {
 				margin: 40px;
 			}
-			aside {
+			section.main {
 				float: left;
 			}
 			a {
@@ -98,6 +97,9 @@
 			footer {
 				text-align: center;
 			}
+			section.kontakt {
+				padding-left: 40px;
+			}
 			/*END OF GENERAL STYLE*/
 			section.meriter li {
 				font-size: 75%;
@@ -113,13 +115,13 @@
 				</a>
 				<ul>
 					<li><a href = "index.html">Hem</a></li>
-					<li><a href = "japanska.html">日本語</a></li>
+					<li><a href = "japanska.html">日本</a></li>
 					<li><a href = "">Kod</a></li>
 					<li><a href = "meriter.html">Meriter</a></li>
 				</ul>
 			</nav>
 		</header>
-		<aside>
+		<section class = "main">
 			<section class = "meriter">
 				<h2>Akademiska Meriter</h2>
 					<ul>
@@ -140,10 +142,9 @@
 					</ul>
 			</section>
 			<section class = "kontakt">
-				<h2>Kontakt</h2>
-					<p>vholmer@kth.se</p>
+				<p><i>vholmer@kth.se</i></p>
 			</section>
-		</aside>
+		</section>
 		<footer>
 			<figure>
 				<a href = "http://www.kth.se/">
