@@ -4,7 +4,7 @@
 	<head>
 		<title>Viktor Holmér</title>
 		<style type = "text/css">
-			/*START OF GENERAL STYLE*/
+			/*START OF GENERAL TEXT STYLE*/
 			header, section, nav {
 				display: block;
 			}
@@ -56,11 +56,10 @@
 				margin: 30px;
 				border: none;
 			}
-			section.main, footer {
+			footer {
 				margin: 40px;
-			}
-			section.main {
-				float: left;
+				height: 300px;
+				text-align: center;
 			}
 			a {
 				text-decoration: none;
@@ -70,10 +69,8 @@
 				color: #E9967A;
 			}
 			figure {
-				float: right;
 				margin: 40px;
 				padding: 3px;
-				margin-top: -240px;
 			}
 			figure img {
 				width: 150px;
@@ -85,7 +82,6 @@
 			}
 			ul {
 				list-style-type: none;
-				margin-left: -15px;
 				border: 1px solid #000000;
 				border-spacing: 10px;
 				padding: 0px;
@@ -94,19 +90,32 @@
 				margin: 10px;
 				margin-left: 20px;
 			}
-			footer {
+			/*END OF GENERAL TEXT STYLE*/
+			section.kontakt {
 				text-align: center;
 			}
-			section.kontakt {
-				padding-left: 40px;
+			section.main li {
+				font-size: 75%;
 			}
-			/*END OF GENERAL STYLE*/
-			section.info article {
+			section.avkurser ul {
+				width: 350px;
+			}
+			section.laskurser ul {
+				width: 350px;
+			}
+			section.avkurser {
 				float: left;
-				width: 420px;
-				font-size: 85%;
-				margin-top: -25px;
-				margin-bottom: 20px;
+			}
+			section.laskurser {
+				float: right;
+			}
+			section.main {
+				margin: 40px;
+				text-align: justify;
+				font-size: 1em;
+			}
+			h2 {
+				text-align: center;
 			}
 		</style>
 	</head>
@@ -118,38 +127,53 @@
 					<img src="images/skold.svg" onerror="this.onerror=null; this.src='/images/skold.png'">
 				</a>
 				<ul>
-					<li><a href = "index.html">Hem</a></li>
-					<li><a href = "japanska.html">日本</a></li>
-					<li><a href = "">Kod</a></li>
-					<li><a href = "kurser.html">Kurser</a></li>
+					<li><a href = "indexeng.html">Home</a></li>
+					<li><a href = "japeng.html">日本</a></li>
+					<li><a href = "">Code</a></li>
+					<li><a href = "kursereng.html">Courses</a></li>
 					<li><a href = "">CV</a></li>
-					<li><a href = "indexeng.html">English</a></li>
+					<li><a href = "kurser.html">Svenska</a></li>
 				</ul>
 			</nav>
 		</header>
 		<section class = "main">
-			<section class = "intressen">
-				<h2>Sysselsättning</h2>
+			<section class = "laskurser">
+				<h2>Current Courses</h2>
 				<ul>
-					<li>Civilingenjör Datateknik</li>
-					<li>Programmering</li>
-					<li>Japanska</li>
+					<li>[Calculus in Several Variable] - 7.5 Credits</li>
+					<li>[Software Engineering, Basics] - 9 Credits</li>
+					<li>[Japanese Basics] - 7.5 Credits</li>
+					<li>[Programme Integrating Course] - 6 Credits</li>
+					<li>-</li>
+					<li>-</li>
+					<li>-</li>
+					<li>-</li>
+					<li>-</li>
+					<li>-</li>
+					<li>-</li>
+					<li>-</li>
+					<li>-</li>
+					<li>-</li>
 				</ul>
 			</section>
-			<section class = "info">
-				<h2>Allmän Information</h2>
-				<article>
-					<p>
-						Trevligt att du hittat hit! Jag har studerat
-						till civilingenjör sedan tidernas
-						begynnelse, dvs 2013. Jag hoppas kunna bli klar
-						till 2018 och hinna med en utbytestripp till
-						Japan däremellan någonstans. På den här sidan
-						är det tänkt att du skall kunna hitta lite
-						allmän information om det jag skrivit under
-						intressen här ovanför.
-					</p>
-				</article>
+			<section class = "avkurser">
+				<h2>Completed Courses</h2>
+				<ul>
+					<li>[Database Technology] - 6 Credits</li>
+					<li>[Computer Organization] - 9 Credits</li>
+					<li>[Probability Theory &amp; Statistics] - 6 Credits</li>
+					<li>[Logic for Computer Science] - 6 Credits</li>
+					<li>[Programming Paradigms] - 7.5 Credits</li>
+					<li>[Numerical Methods, Basic Course] - 7.5 Credits</li>
+					<li>[Introduction to Computer Science] - 19 Credits</li>
+					<li>[Sustainable Development] - 6 Credits</li>
+					<li>[Human-Computer Interaction] - 6 Credits</li>
+					<li>[Linear Algebra] - 7.5 Credits</li>
+					<li>[Communication in Sciences] - 7.5 Credits</li>
+					<li>[Calculus in One Variable] - 7.5 Credits</li>
+					<li>[Mathematics, Basic Course] - 4.5 Credits</li>
+					<li>[Introduction to Mathematics I] - 1.5 Credits</li>
+				</ul>
 			</section>
 			<section class = "kontakt">
 				<p><i>vholmer@kth.se</i></p>
@@ -161,10 +185,10 @@
 					<img src = "images/kth.jpg"/>
 				</a>
 				<figcaption>
-					<a href = "https://www.kth.se/en/gemensamt/disclaimer/disclaimer-for-personliga-webbsidor-1.62633">Vetenskap och Konst</a>
+					<a href = "https://www.kth.se/en/gemensamt/disclaimer/disclaimer-for-personliga-webbsidor-1.62633">Science and Art</a>
 				</figcaption>
 			</figure>
-			<p><i>Senast uppdaterad den 6 Maj 2015</i></p>
+			<p><i>Last updated on the 6th of May 2015</i></p>
 		</footer>
 	</body>
 </html>
