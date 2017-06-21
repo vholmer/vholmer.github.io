@@ -1,13 +1,25 @@
-cur_lang = "sv";
+cur_lang = "jp";
 
 all_langs = ["sv", "en", "jp"];
 
 LAST_UPDATED = "2017-06-21"
+LAST_UPDATED_JP = "平成２９年６月２１日"
+
+ids = [
+	"name",
+	"blog",
+	"courses",
+	"cv",
+	"intro",
+	"foot",
+	"write",
+	"contact"
+]
 
 window.langs = {
 	"site_name": "vholmer",
 	"sv_name": "Viktor Holmér",
-	"sv_intro": "Trevligt att du hittat hit! Jag har studerat till civilingenjör sedan tidernas begynnelse, dvs 2013. Jag hoppas kunna bli klar till 2018 och hinna med en utbytestripp till Japan däremellan någonstans. På den här sidan är det tänkt att du skall kunna hitta lite allmän information om det jag skrivit under intressen här ovanför.",
+	"sv_intro": "Trevligt att du hittat hit! Jag har studerat till civilingenjör sedan tidernas begynnelse, dvs 2013. Jag hoppas kunna bli klar till 2019 och hinna med en utbytestripp till Japan däremellan någonstans. På den här sidan är det tänkt att du skall kunna hitta lite allmän information om det jag skrivit under intressen här ovanför.",
 	"sv_blog": "Blogg",
 	"sv_write": "Texter",
 	"sv_courses": "Kurser",
@@ -24,55 +36,24 @@ window.langs = {
 	"en_contact": "Contact",
 	"en_foot": "Last updated " + LAST_UPDATED,
 
-	"jp_name": "ビクトル・ホルメール",
-	"jp_intro": "",
-	"jp_blog": "",
-	"jp_courses": "",
-	"jp_cv": "",
-	"jp_foot": "",
-	"jp_write": "",
+	"jp_name": "ホルメール・ビクトル",
+	"jp_intro": "僕の自分で作った網処へ歓迎。",
+	"jp_blog": "ブログ",
+	"jp_courses": "課程",
+	"jp_cv": "履歴書",
+	"jp_contact": "連絡",
+	"jp_foot": "最終更新日　" + LAST_UPDATED_JP,
+	"jp_write": "著述",
 }
 
-function loadName() {
-	document.getElementById("header").innerHTML = window.langs[cur_lang + "_name"];
+function loadElement(id) {
+	console.log(id);
+	document.getElementById(id).innerHTML = window.langs[cur_lang + "_" + id];
 }
 
-function loadBlog() {
-	document.getElementById("blog").innerHTML = window.langs[cur_lang + "_blog"];
-}
-
-function loadCourses() {
-	document.getElementById("courses").innerHTML = window.langs[cur_lang + "_courses"];
-}
-
-function loadCV() {
-	document.getElementById("cv").innerHTML = window.langs[cur_lang + "_cv"];
-}
-
-function loadIntro() {
-	document.getElementById("intro").innerHTML = window.langs[cur_lang + "_intro"];
-}
-
-function loadFoot() {
-	document.getElementById("foot").innerHTML = window.langs[cur_lang + "_foot"];
-}
-
-function loadWrite() {
-	document.getElementById("write").innerHTML = window.langs[cur_lang + "_write"];
-}
-
-function loadContact() {
-	document.getElementById("contact").innerHTML = window.langs[cur_lang + "_contact"];
-}
-
-function loadLang() {
-	document.getElementById("title").innerHTML = window.langs["site_name"];
-	loadName();
-	loadBlog();
-	loadCourses();
-	loadCV();
-	loadIntro();
-	loadFoot();
-	loadWrite();
-	loadContact();
+function loadText() {
+	document.getElementById("site_name").innerHTML = window.langs["site_name"];
+	for (let item of ids) {
+		loadElement(item);
+	}
 }
