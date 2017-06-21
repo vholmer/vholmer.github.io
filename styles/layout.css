@@ -18,18 +18,18 @@ div.maincontent p {
 	position: relative;
 	clear: left;
 	padding: 2em;
-	font-size: 18pt;
+	font-size: 1.5em;
 }
 
 div.footer {
-	position: absolute;
+	position: relative;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	padding: 1em;
 	text-align: center;
 	clear: both;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 nav.primary {

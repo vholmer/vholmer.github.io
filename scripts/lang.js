@@ -1,13 +1,13 @@
 cur_lang = "sv";
 
-all_langs = ["sv", "en", "jp"];
+const all_langs = ["sv", "en", "jp"];
 
 notCurLangs = all_langs.filter(function(x) { return x !== cur_lang; });
 
-LAST_UPDATED = "2017-06-21"
-LAST_UPDATED_JP = "平成２９年６月２１日"
+const LAST_UPDATED = "2017-06-21"
+const LAST_UPDATED_JP = "平成２９年６月２１日"
 
-ids = [
+const ids = [
 	"name",
 	"blog",
 	"courses",
