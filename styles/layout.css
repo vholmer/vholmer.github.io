@@ -1,0 +1,52 @@
+nav.primary ul,
+nav.primary ul li {
+	margin: 0px;
+}
+
+div.mainheader h1 {
+	font-weight: bold;
+	float: left;
+	margin: 1em;
+}
+
+div.maincontent p {
+	position: relative;
+	clear: left;
+	padding: 2em;
+	font-size: 14pt;
+}
+
+div.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1em;
+	text-align: center;
+	clear: both;
+}
+
+nav.primary {
+	float: left;
+	background: #AAAAAA;
+	width: 100%;
+	max-width: 100%;
+}
+
+nav.primary li {
+	cursor: pointer;
+}
+
+nav.primary li:hover {
+	color: #FF0F0F;
+}
+
+nav.primary ul li {
+	display: inline;
+	float: left;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	padding: 0 14px;
+}

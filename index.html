@@ -1,13 +1,49 @@
 <!DOCTYPE HTML>
 
 <html>
-	<meta charset="UTF-8">
+	<meta charset = "UTF-8">
 	<head>
-		<title>Viktor Holmér</title>
-		<link rel = "stylesheet" type = "text/css" href = "styles/main.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<title id = "title"></title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		  <!-- Mobile Specific Metas
+		  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		  <!-- CSS
+		  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		  <link rel="stylesheet" href="styles/normalize.css">
+		  <link rel="stylesheet" href="styles/skeleton.css">
+		  <link rel="stylesheet" href="styles/layout.css">
+		  <script src = "scripts/lang.js"></script>
 	</head>
 	<body>
-		
+		<div class="mainheader">
+			<h1 id="header"></h1>
+		</div>
+		<div class="band navigation">
+			<nav class="container primary">
+				<div class="sixteen columns">
+					<ul>
+						<li id="blog"></li>
+						<li id="courses"></li>
+						<li id="cv"></li>
+						<li id="contact"></li>
+						<li id="lang1"></li>
+						<li id="lang2"></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="maincontent">
+			<p id="intro"></p>
+		</div>
+		<div class="footer">
+			<footer id="foot"></footer>
+		</div>
+		<script>
+			loadLang();
+		</script>
 	</body>
 </html>
