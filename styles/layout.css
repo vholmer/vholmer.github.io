@@ -28,7 +28,7 @@ div.footer {
 	padding: 1em;
 	text-align: center;
 	clear: both;
-	font-size: 18pt;
+	font-size: 2em;
 }
 
 nav.primary {
@@ -36,7 +36,7 @@ nav.primary {
 	background: #AAAAAA;
 	width: 100%;
 	max-width: 100%;
-	font-size: 19pt;
+	font-size: 2em;
 }
 
 nav.primary li {
