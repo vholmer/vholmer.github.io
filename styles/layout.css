@@ -1,6 +1,8 @@
 body {
 	padding-right: 25%;
 	padding-left: 25%;
+	/*background-color: #333333;
+	color: #BBBBBB;*/
 }
 
 nav.primary ul,
@@ -45,7 +47,7 @@ nav.primary li {
 }
 
 nav.primary li:hover {
-	color: #FF0F0F;
+	color: #FFFFFF;
 }
 
 nav.primary ul li {
