@@ -1,6 +1,8 @@
-cur_lang = "jp";
+cur_lang = "sv";
 
 all_langs = ["sv", "en", "jp"];
+
+notCurLangs = all_langs.filter(function(x) { return x !== cur_lang; });
 
 LAST_UPDATED = "2017-06-21"
 LAST_UPDATED_JP = "平成２９年６月２１日"
@@ -47,7 +49,6 @@ window.langs = {
 }
 
 function loadElement(id) {
-	console.log(id);
 	document.getElementById(id).innerHTML = window.langs[cur_lang + "_" + id];
 }
 
@@ -56,4 +57,12 @@ function loadText() {
 	for (let item of ids) {
 		loadElement(item);
 	}
+	document.getElementById("lang0").src = "./images/" + notCurLangs[0] + ".png";
+	document.getElementById("lang1").src = "./images/" + notCurLangs[1] + ".png";
+}
+
+function changeLang(i) {
+	cur_lang = notCurLangs[i];
+	notCurLangs = all_langs.filter(function(x) { return x !== cur_lang; });
+	loadText();
 }
